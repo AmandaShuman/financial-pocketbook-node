@@ -1,6 +1,7 @@
 const express = require('express');
 const morgan = require('morgan');
 const incomeRouter = require('./routes/incomeRouter');
+const expenseRouter = require('./routes/expenseRouter');
 
 const hostname = 'localhost';
 const port = 3000;
@@ -10,6 +11,7 @@ app.use(morgan('dev'));
 app.use(express.json());
 
 app.use('/income', incomeRouter);
+app.use('/expenses', expenseRouter);
 
 app.use(express.static(__dirname + '/public'));
 
