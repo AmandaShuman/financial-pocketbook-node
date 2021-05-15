@@ -11,7 +11,7 @@ incomeRouter.route('/')
     res.end('Will send all the income entries to you');
   })
   .post((req, res) => {   
-    res.end(`Will add the income entry: ${req.body.name} with addition: ${req.body.addition}`);
+    res.end(`Will add the income entry: ${req.body.name} with amount: ${req.body.amount}`);
   })
   .put((req, res) => {
     res.statusCode = 403;   
