@@ -1,0 +1,13 @@
+{
+  "name": "financialpocketbook",
+  "version": "1.0.0",
+  "description": "Adding income and expenses on a modern mobile checkbook",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
